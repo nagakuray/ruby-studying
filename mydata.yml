@@ -1,0 +1,68 @@
+# names:
+#   - taguchi
+#   - fkoji
+# scores:
+#   - 90
+#   - 100
+#
+
+# names: [tguchi,fkoji]
+# scores: [90,100]
+
+# - name: taguchi
+#   score: 90
+#
+# - name: fkoji
+#   score: 100
+#
+
+# - {name: taguchi, score: 90}
+# - {name: nagakuray, score: 100}
+
+# this
+# is
+# a
+# pen.
+
+# - |+
+#   this
+#   is
+#   a
+#   pem.
+
+# - &leader tanaka
+# - *leader
+# - tanaka
+# - sasaki
+
+# common: &common
+#   user: dbuser
+#   password: dbpassword
+#
+# development:
+#   database: myapp_dev
+#   <<: *common
+#
+# production:
+#   database: myapp_prod
+#   <<: *common
+#
+# test:
+#   database: myapp_test
+#   user: dbuser
+#   <<: *common
+
+# ----
+# ...
+
+---
+- a
+- b
+- c
+...
+
+---
+- 1
+- 2
+- 3
+...
